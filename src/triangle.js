@@ -24,7 +24,7 @@ class Triangle {
         var d = this.size/200.0 // delta for size of triangle
         drawTriangle( [xy[0]-(d/2), xy[1]-(d/2), xy[0]+(d/2), xy[1]-(d/2), xy[0], xy[1]+(d/2)] );
     }
-  }
+}
 
 function drawTriangle(vertices) {
     // var vertices = new Float32Array([0,0.5,   -0.5,-0.5,    0.5,-0.5])
