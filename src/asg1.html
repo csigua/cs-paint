@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jumpscare</title>
+</head>
+<body onload="main()">
+    <p>Christian Sigua</p>
+    <p>csigua@ucsc.edu</p>
+    <b>Awesome stuff! :)</b>
+    <p>I added a preview for the color you're going to paint with, as well as a "RAINBOW MODE" that makes the brush paint with rainbow colors.</p>
+    <p>There's also the option to change how "fast" the rainbow is, that is, how quickly it cycles between colors.</p>
+    In addition to those things, I also decided to add a color preview box so you can see what color you're using before you paint.
+    <p>For the image, I decided to do a wine bottle and a wine glass on a purple background. Click the "DRAW REALLY COOL IMAGE!!" button to check it out!</p>
+    <p>(also for no particular reason at all you should see what happens when you clear the canvas)</p>
+    <canvas id="webgl" width="400" height="400"></canvas>
+    <br>
+    <button class="button" id="clearButton">Clear</button> <button class="button" id="imageButton">DRAW REALLY COOL IMAGE!!</button><p>
+    <p>Drawing mode:</p>
+    <button class="button" id="pointButton">Square</button>
+    <button class="button" id="triangleButton">Triangle</button>
+    <button class="button" id="circleButton">Circle</button>
+    <p>
+    Shape color:<p>
+    Preview: <canvas id="preview" width="40" height="30"></canvas><p>
+    Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlide">
+    Green <input type="range" min="0" max="100" value="100" class="slider" id="greenSlide">
+    Blue <input type="range" min="0" max="100" value="1" class="slider" id="blueSlide"><p>
+
+    <button class="button" id="rainbowButton">TOGGLE RAINBOW MODE!!!!!!!!</button>
+    <b><span id="toggleText">OFF</span></b><p>
+    Rainbow Speed <input type="range" min="1" max="30" value="100" class="slider" id="hueStep"><p>
+
+    Shape Size: <input type="range" min="0" max="100" value="100" class="slider" id="sizeSlide">
+    Segment Count: <input type="range" min="0" max="20" value="20" class="slider" id="segmentSlide">
+    <br><br>
+    <img src="../assets/drawingplan.jpg" width="800">
+
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="./image.js"></script>
+    <script src="./circle.js"></script>
+    <script src="./triangle.js"></script>
+    <script src="./point.js"></script>
+    <script src="./asg1.js"></script>
+</body>
+</html>
